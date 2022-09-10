@@ -124,7 +124,9 @@ Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões atrav
 
 ## Veja sobre integração com REST e métodos HTTP na prática
 ##### 1. Integraçao com serviços REST
+- Podemos fazer alterações e consultas via JSON também pelo vs code, através de API.
 ##### 2. Métodos HTTP na prática
+- Através da API POSTMAN é possível fazer todas as alterações ou consultas que forem necessárias no HTTP via JSON.
 ##### 3. Código de estado HTTP
 - Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada
 - 1xx - Informativo ("Recebeu, mas não foi processada ainda")
