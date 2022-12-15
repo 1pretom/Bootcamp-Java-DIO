@@ -192,11 +192,88 @@ Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões atrav
 
 ## Gerenciamento de erros e volume de acesso
 
-# A arquitetura de aplicaçõe smóveis e internet das coisas
+##### Gerenciamento de erros
+Onde é mais complexo:
+- Processos assíncronos(Microserviços #2)
+- Pipeline
+
+Solução:
+- Dead letter queue (coloca o erro em uma nova fila no message broker e dps tenta processar novamente)
+- Filas de re-tentativas
+
+# A arquitetura de aplicações móveis e internet das coisas
 
 ## Conceitos da Internet das Coisas
+##### Internet das coisas
+
+###### Por que conectar as coisas?
+- Embutir sensores em objetos do dia-a-dia
+- Coletar dados dos sensores
+- Usar o dado para tomar decisão
+
+
+###### Conceitos básicos de IoT
+
+![conceitos basicos de iot](conceitos-basicos-de-iot.png)
+
+Alguns exemplos de aplicação da IoT são: os Smart Building, as Smart Home, Wearables, na Agricultura, Smart Transportation, Cadeia de suprimentos (RDIF Supply Chain) e Energia eficiente.
+
+Computação Ubíqua são os computadores saindo das nossas vistas e mesmo assim estando presentes em todas as areas.
+
+###### Desafios da internet das coisas
+1. Privacidade e Segurança
+1. Quantidade exponencial de dispositivos conectados na rede
+1. Ser capaz de processar e armazenar uma enorme quantidade de informações
+1. Gerar valor a partir dos dados coletados.
+
 
 ## Arquitetura da internet das coisas e protocolo de comunicação
+
+###### Considerações de atributos antes de fazer uma escolha de onde vai coletar os dados
+- Baixo consumo de energia
+- Rede de dados limitado
+- Resiliencia (do device ex.: buffer para guardar os dados antes de transmitir quando não tem conexão com rede)
+- Segurança
+- Customização
+- Baixo custo
+
+##### Exemplos de plataformas: 
+###### Arduino
+- Plataforma de prototipagem
+- Com entradas e saídas
+- Desenvolvedor escreve em C/C++
+- Interface serial ou USB
+- Shields (componentes de conectividade)
+
+###### Embarcados - MCUs
+
+- Microcontrolador de chip único
+- Sistema operacional real time (fala com o hardware e entrega o processamento dentro de certos limites aceitáveis)
+- Embarcado
+- Uso industrial, médico, militar, transporte
+###### Minicomputadores - Raspberry Pi
+
+- Computador completo
+- Hardware integrado em uma única placa
+- Roda SO Linux ou Windows
+- Uso doméstico e comercial
+
+###### **O protocolo mais utilizado com IoT é o *MQTT***
+Tanto um smartphone quanto um gps tracker usando um SO Real Time (FreeRTOS) conseguem se comunicar
+###### MQTT
+- Base na pilha do TCP/IP
+- Protocolo de mensagem assíncrona (M2M - Machine to Machine) [envia e não fica esperando uma resposta]
+- Criado pela IBM para conectar sensores de pipelines de petróleo a satélites
+- Padrão OASIS suportado pelas linguagens de programação mais populares
+###### Modelo Cliente-Servidor
+modelo sincrono
+![modelo-cliente-servidor.png](modelo-cliente-servidor.png)
+###### Modelo usado pelo MQTT
+
+![modelo-usado-pelo-mqtt.png](modelo-usado-pelo-mqtt.png)
+como mqtt publica a mensagem
+![como-publica.png](como-publica.png)
+
 
 ## Flexibilidade dos tópicos de Cloud
 
