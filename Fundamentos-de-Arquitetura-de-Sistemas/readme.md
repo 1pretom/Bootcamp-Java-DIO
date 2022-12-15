@@ -145,9 +145,13 @@ Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões atrav
 ## Introdução a arquitetura de sistemas
 ##### 1. Tipos de arquitetura
 - Monolito (Tem aplicação única e o proxy HTTP fala com qual instancia da aplicação irá trabalhar, é a arquitetura mais simples).
+![](monolito.png)
 - Microserviços #1 (É o mais caótico, tem um serviço pra cara operação, cada caixa do Nodo é como se fosse um Monolito diferente, porém os serviços podem se comunicar entre sí e conforme cresce a quantidade de serviços, cresce também o caos).
+![](microservicos1.png)
 - Microserviços #2 (Nesse caso existe um Message Broker responsável por centralizar as comunicações que são de um serviço pro outro, a parte ruim é que se tiver problema no Message Broker, a arquitetura fica debilitada).
+![](microservicos2.png)
 - Microserviços #3 (A mensagem é passada entre os serviços por um Gerenciador de Pipeline que fica responsável por passar pelo primeiro serviço, depois pelo segundo e assim por diante até devolver a solicitação pro cliente em caso de sucesso ou erro).
+![](microservicos3.png)
 
 
 ## Comparando os modelos Monolito e Microsserviços
