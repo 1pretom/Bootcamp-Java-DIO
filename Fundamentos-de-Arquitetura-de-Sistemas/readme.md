@@ -156,6 +156,40 @@ Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões atrav
 
 ## Comparando os modelos Monolito e Microsserviços
 
+###### Monolito
+
+|Prós|Contras|
+|-|-|
+|Baixa complexidade| Stack única|
+|Monitoramento simplificado| Compartilhamento de recursos|
+|| Acoplamento das funcionalidades|
+|| Mais complexo a escalabilidade|
+
+###### Microserviços #1
+
+|Prós| Contras|
+|-|-|
+|Stack dinâmica| Acoplamento|
+|Simples escalabilidade| Monitoramento mais complexo|
+|| Provisionamento mais complexo|
+
+###### Microserviços #2
+
+|Prós| Contras|
+|-|-|
+|Stack dinâmica| Monitoramento mais complexo|
+|Simples escalabilidade| Provisionamento mais complexo|
+|Desacoplamento||
+
+###### Microserviços #3
+
+|Prós| Contras|
+|-|-|
+|Stack dinâmica| Provisionamento mais complexo|
+|Simples escalabilidade| Plataforma inteira depende do gerenciador de pipeline|
+|Desacoplamento||
+|Menor complexidade||
+
 ## Gerenciamento de erros e volume de acesso
 
 # A arquitetura de aplicaçõe smóveis e internet das coisas
@@ -167,3 +201,15 @@ Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões atrav
 ## Flexibilidade dos tópicos de Cloud
 
 ## Estudo de caso
+
+# Conceitos de responsibidade e experiencia do usuário
+
+## Tópicos introdutórios sobre UX e UI
+
+## Cores da interface
+
+## Componentes da interface do Usuário
+
+## Como aplicar os conceitos em projetos
+
+## Bibliografia complementar e dicas do especialista
